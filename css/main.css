@@ -3,23 +3,202 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
 
+/* Default */
+
 body {
-	font: Lato, "Helvetica Neue", Helvetica, sans-serif;
-	font-size: 16px; /*Should increase to 20px on screens 768 px and wider*/
+	font-family: Lato, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 16px;
 	font-weight: 300;
 	background-color: #E9EAEE;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font: Raleway, "Helvetica Neue", Helvetica, sans-serif;
-	/*2nd level headings should be color:#BC6026*/
+	font-family: Raleway, "Helvetica Neue", Helvetica, sans-serif;
 }
 
+h2 {
+	color: #BC6026;
+}
+
+/* Controls the navbar section */
+nav.navbar-default{
+	background-color: #181C22;
+}
+
+.navbar-default .navbar-nav li {
+	font-size: 16px;
+	display: inline-block;
+    font-variant: small-caps;
+}
+
+.navbar-default .nav li a {
+    color:white;
+    padding: 0.5em;
+}
+
+.navbar-default .navbar-nav li > a:hover, .navbar-default .navbar-nav li > a:focus {
+  color:#D87E28;
+}
+
+/* Controls the svg icons */
+#first svg {
+    height: 1em;
+    fill: white;
+    margin-left: 15px;
+}
+
+#first a:hover svg, #first a:focus svg {
+    fill: #D87E28;
+}
+
+#headlinesection svg {
+    height: 1.5em;
+    margin-bottom: 1em;
+    fill: #D87E28;
+    display: none;
+}
+
+#cafeinformationsection svg {
+    height: 1.8em;
+    fill: #D87E28;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+
+/* Controls the header area*/
+#headerarea #element {
+    padding-top: 3em;
+}
+
+#headerarea p {
+    display: none;
+}
+
+/* Controls the cafe information section*/
+#cafeinformationsection {
+    background-color: #DBDCE3;
+    padding: 1em 0px;
+}
+
+#cafeinformationsection  img#mapimage {
+    border-radius: 5px;
+}
+
+/* Controls the menu section */
+#menu dl dd {
+    margin-left: 1em;   
+}
+
+/* Controls the story section*/
+#story {
+ background-color: #DBDCE3;
+}
+
+#story img {
+    float: right;
+    max-height: 300px;
+    position: relative;
+    margin-left: 1em;
+    border-radius: 5px;
+}
+
+/* Controls the footer section */
+div#stripe {
+    background-color: #D87E28;
+    height: 3px;
+}
+
+#footer.container-fluid {
+    padding-top: 1em;
+    background-color: #AFB3C2;
+    border-top-style: solid;
+    border-top-color: #D87E28;
+    font-size: 12px;
+    clear: both;
+}
+
+/* For small devices */
 @media screen and (min-width: 768px) {
-	/* 2nd level headings should be align-content:center;
-	and have a blank space below them equal to the height of current font(em) */
+	
+    h2 {
+		text-align: center;
+        padding-bottom: 1em;
+	}
+    
+	body {
+		font-size: 20px;
+	}
+    
+    /* navbar section*/
+    .navbar-default .navbar-nav li {
+        position: relative;
+        top: 0.3em;
+    }   
+
+	nav.navbar-default {
+	   background-color: rgba(24, 28, 34, 0.8);
+    }
+    
+    .navbar-default .nav li a {
+        padding: 0.5em 1em;
+    }
+    
+    /* header area */
+    #headerarea.container-fluid {
+        background-image: url(img/background-sm.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 550px;
+        color: white;
+    }
+    
+    #headerarea #element  {
+        text-align: right;
+    }
+    
+    #headerarea p {
+        display: inherit;
+    }
+    
+    /* headline section */
+    #headlinesection {
+        font-size: 1.25em;
+        text-align: center;
+        padding: 3em 0px;
+    }
+    
+    #headlinesection svg {
+        display: block;
+        margin: auto;
+        height: 1.5em;
+        margin-bottom: 1em;
+        fill: #D87E28
+    }
+    
+    #story img {
+        max-height: 400px;
+        }
+    
+    #footer .col-sm-9 {
+        text-align: right;   
+    }
 }
 
-svg {
-	/* same height as current font(em) */
+/* For medium devices */
+@media screen and (min-width: 990px) {
+    #headerarea.container-fluid {
+        background-image: url(img/background-md.jpg);
+        min-height: 670px;
+    }
+    
+    #headerarea #element h1 {
+        font-size: 4em;
+    }
+}
+
+/* For large devices */
+@media screen and (min-width: 1200px) {
+   #headerarea.container-fluid {
+        background-image: url(img/background-lg.jpg);
+    }
 }
