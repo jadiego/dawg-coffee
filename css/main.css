@@ -36,8 +36,8 @@ nav.navbar-default{
     padding: 0.5em;
 }
 
-.navbar-default .navbar-nav li > a:hover, .navbar-default .navbar-nav li > a:focus {
-  color:#D87E28;
+ul.nav a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color:#D87E28 !important;
 }
 
 /* Controls the svg icons */
@@ -47,7 +47,7 @@ nav.navbar-default{
     margin-left: 15px;
 }
 
-#first a:hover svg, #first a:focus svg {
+.navbar #first a:hover svg, #first a:focus svg {
     fill: #D87E28;
 }
 
@@ -91,7 +91,7 @@ nav.navbar-default{
 
 /* Controls the story section*/
 #story {
- background-color: #DBDCE3;
+    background-color: #DBDCE3;
 }
 
 #story img {
@@ -172,12 +172,12 @@ div#stripe {
         margin: auto;
         height: 1.5em;
         margin-bottom: 1em;
-        fill: #D87E28
+        fill: #D87E28;
     }
     
     #story img {
         max-height: 400px;
-        }
+    }
     
     #footer .col-sm-9 {
         text-align: right;   
@@ -198,7 +198,7 @@ div#stripe {
 
 /* For large devices */
 @media screen and (min-width: 1200px) {
-   #headerarea.container-fluid {
+    #headerarea.container-fluid {
         background-image: url(img/background-lg.jpg);
     }
 }
