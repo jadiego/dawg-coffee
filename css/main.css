@@ -44,7 +44,7 @@ nav.navbar-default{
 #first svg {
     height: 1em;
     fill: white;
-    margin-left: 15px;
+    padding-left: 15px;
 }
 
 .navbar #first a:hover svg, .navbar #first a:focus svg {
