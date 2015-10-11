@@ -36,8 +36,8 @@ nav.navbar-default{
     padding: 0.5em;
 }
 
-ul.nav a:hover, .navbar-default .navbar-nav > li > a:focus {
-  color:#D87E28 !important;
+.navbar-default .navbar-nav li > a:hover, .navbar-default .navbar-nav li > a:focus {
+  color:#D87E28;
 }
 
 /* Controls the svg icons */
@@ -47,7 +47,7 @@ ul.nav a:hover, .navbar-default .navbar-nav > li > a:focus {
     margin-left: 15px;
 }
 
-.navbar #first a:hover svg, #first a:focus svg {
+.navbar #first a:hover svg, .navbar #first a:focus svg {
     fill: #D87E28;
 }
 
@@ -58,7 +58,7 @@ ul.nav a:hover, .navbar-default .navbar-nav > li > a:focus {
     display: none;
 }
 
-#cafeinformationsection svg {
+#cafe svg {
     height: 1.8em;
     fill: #D87E28;
     margin-bottom: 0.5em;
@@ -75,12 +75,12 @@ ul.nav a:hover, .navbar-default .navbar-nav > li > a:focus {
 }
 
 /* Controls the cafe information section*/
-#cafeinformationsection {
+#cafe {
     background-color: #DBDCE3;
     padding: 1em 0px;
 }
 
-#cafeinformationsection  img#mapimage {
+#cafe  img#mapimage {
     border-radius: 5px;
 }
 
@@ -103,11 +103,6 @@ ul.nav a:hover, .navbar-default .navbar-nav > li > a:focus {
 }
 
 /* Controls the footer section */
-div#stripe {
-    background-color: #D87E28;
-    height: 3px;
-}
-
 #footer.container-fluid {
     padding-top: 1em;
     background-color: #AFB3C2;
@@ -145,9 +140,9 @@ div#stripe {
     
     /* header area */
     #headerarea.container-fluid {
-        background-image: url(img/background-sm.jpg);
-        background-size: cover;
+        background-image: url(../img/background-sm.jpg);
         background-repeat: no-repeat;
+        background-size: cover;
         min-height: 550px;
         color: white;
     }
@@ -187,7 +182,7 @@ div#stripe {
 /* For medium devices */
 @media screen and (min-width: 990px) {
     #headerarea.container-fluid {
-        background-image: url(img/background-md.jpg);
+        background-image: url(../img/background-md.jpg);
         min-height: 670px;
     }
     
@@ -199,6 +194,6 @@ div#stripe {
 /* For large devices */
 @media screen and (min-width: 1200px) {
     #headerarea.container-fluid {
-        background-image: url(img/background-lg.jpg);
+        background-image: url(../img/background-lg.jpg);
     }
 }
